@@ -225,6 +225,8 @@ export async function uploadAvatar(request, response) {
 
     return response.json({
       message: "upload profile",
+      success : true,
+      error : false,
       data: {
         _id: userId,
         avatar: upload.url,
@@ -263,7 +265,7 @@ export async function updateUserDetails(request, response) {
     );
 
     return response.json({
-      message: "updated user successfully",
+      message: "updated successfully",
       error: false,
       success: true,
       data: updateUser,
